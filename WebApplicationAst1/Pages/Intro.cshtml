@@ -1,0 +1,33 @@
+﻿@page
+@model WebApplicationAst1.Pages.IntroModel
+@{
+    ViewData["Title"] = "Intro Page";
+}
+
+@section Text{
+    <div>
+        <p style="text-align:center">
+            Welcome to the Intro Page <br /> Student ID - A00239904 
+        </p>
+    </div>
+}
+
+<div>
+    <h3> My Name is Manpreet Kaur</h3>
+</div>
+
+<div>
+    <form>
+        <input name="firstNum" type="number" value="@Model.firstNum" />
+        <input name="secondNum" type="number" value="@Model.secondNum" />
+        <input type="submit" value="Submit" />
+        <output> Answer Is : @Model.Result </output>
+    </form>
+
+
+</div>
+
+@if (Model.ResultSet == true)
+{
+
+}
